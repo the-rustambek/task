@@ -1,7 +1,7 @@
  import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import DocumentPreview from './Components/HomePage/DocumentPreview/DocumentPreview';
-import HomeGetTables from './Components/HomePage/HomeGetTables';
+import DocumentPreview from './Components/DocumentPreview/DocumentPreview';
+ import HomeGetTables from './Components/HomePage/HomeGetTables';
  
 
 function App() {
