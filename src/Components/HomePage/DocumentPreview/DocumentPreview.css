@@ -1,0 +1,15 @@
+.section .container{
+    display: flex;
+    justify-content: center;align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.section-title{
+    font-size: 42px;
+    color: blueviolet;
+    text-align: center;
+}
+.MuiFormControl-root{
+    margin: 20px 0 !important;
+    width: 400px !important;
+}
