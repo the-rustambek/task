@@ -5,13 +5,14 @@ import { Button, FormControl, InputLabel, Select } from "@mui/material";
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import { useNavigate } from "react-router-dom";
  export default function NewDocument() {
  
   const [documentName, setDocumentName] = useState("");
   const [fieldName, setFieldName] = useState("");
   const [sequence, setSequence] = useState("");
   const [option, setOption] = useState("");
-  
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch('http://20.100.194.232:8083/api/v1/documents/create', {
@@ -36,7 +37,8 @@ import Checkbox from '@mui/material/Checkbox';
         "API-KEY": "secret-api-key",
         'Content-type': 'application/json; charset=UTF-8',
       },
-    })
+    },   
+    )
   };
 
   return (

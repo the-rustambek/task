@@ -10,9 +10,8 @@ import { Link } from 'react-router-dom';
  
 
 export default function HomeGetTables() {
-
-   // ****************************** api get *******************************
   const [document, setDocument] = useState([]);
+
   useEffect(() => {
     fetch('http://20.100.194.232:8083/api/v1/documents', {
       method: "GET",
