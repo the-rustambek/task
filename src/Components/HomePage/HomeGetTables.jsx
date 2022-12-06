@@ -27,7 +27,9 @@ export default function HomeGetTables() {
 
 /****************************  code *********************** */
   return (
-    <TableContainer component={Paper}>
+    <>
+    <Link style={{fontSize: "25px",background: "blue",color:"white",padding: "8px 20px",marginLeft: "77%"}} to="/new_document">New Document form</Link>
+    <TableContainer style={{marginTop: "30px"}} component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -55,5 +57,6 @@ export default function HomeGetTables() {
         </TableBody>
       </Table>
     </TableContainer>
+    </>
   );
 }
